@@ -4,13 +4,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 button{
     padding: 10px 20px;
     font-size: 16px;
@@ -43,7 +36,7 @@ nav ul{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 nav ul li{
     margin: 0 10px;
@@ -60,8 +53,6 @@ nav ul li a{
     text-align: center;
 }  
 
-
-
 .hero h1{
     font-size: 48px;
     margin-bottom: 20px;
@@ -72,7 +63,7 @@ nav ul li a{
 }       
 section{
     padding: 50px;
-    text-align: center;
+    text-align: left;
 }   
 
 .design-section{
@@ -92,14 +83,13 @@ section{
 }
 .photo-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     text-align: left;
 }   
-.listcontainer{
+.List-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     text-align: left;
 }   
@@ -114,13 +104,14 @@ section{
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }       
 .gallery img{
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }   
 .gallery img:hover{
     transform: scale(1.05);
@@ -133,7 +124,7 @@ section{
 footer{
     background-color: #f8f9fa;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }   
 h1, h2, h3, h4, h5, h6{
     color: #333;
@@ -147,16 +138,19 @@ h1, h2, h3, h4, h5, h6{
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 50px;
-    text-align: center;
+    text-align: left;
 }   
 nav{
     background-color: #f8f9fa;
     padding: 10px;
-}   
-nav ul{
+} 
+
+ul ol{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}   
+    margin-left: 20px;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
