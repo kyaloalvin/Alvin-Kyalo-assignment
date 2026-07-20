@@ -16,3 +16,5 @@ https://github.com/kyaloalvin/Alvin-Kyalo-assignment.git
 ** Link to Website **
 https://kyaloalvin.github.io/Alvin-Kyalo-assignment/
 ## License
+
+This project is for educational purposes
